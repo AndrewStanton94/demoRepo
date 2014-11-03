@@ -27,4 +27,11 @@ Another issue could be incomplete code due to interruptions. In this case:
 5. Once the new branch has been completed. `add`, `commit` and `push` it.
 * Each branch will need to be pushed separately.
 6. Checkout to master (or parent branch) then merge the other branch in.
-7. 
+
+## Deleting branches
+We probably won't be doing this much. Leaving them will be safer; but for reference:
+
+### Deleting locally
+`git branch -d branchName`
+### Deleting remote
+`git push origin --delete [branchName]`
