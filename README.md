@@ -15,3 +15,5 @@ If all files in changes not staged (the red ones) are to be added. Use the comma
 Checkout can also be used to revert files to their state at last commit. `git checkout [filename]`
 __This works until modifed files have been added.__
 I suggest that we use `add` when we have small changes to record. Then use `commit` and `push` when new features have been added, and at the end of coding sessions if there is only a single person working on the branch.
+
+Another issue could be incomplete code due to interr
