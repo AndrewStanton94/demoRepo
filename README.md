@@ -28,6 +28,11 @@ Another issue could be incomplete code due to interruptions. In this case:
 * Each branch will need to be pushed separately.
 6. Checkout to master (or parent branch) then merge the other branch in.
 
+##Getting all branches
+By default git clone will only clone the master branch. It does have info about the other branches however.
+* Do `git branch -a` to see all branches (including remote)
+* Then `git checkout -b localName orgin/remoteName`
+
 ## Deleting branches
 We probably won't be doing this much. Leaving them will be safer; but for reference:
 
