@@ -24,7 +24,7 @@ Another issue could be incomplete code due to interruptions. In this case:
 4. There is a slight difference with pushing. The standard `push` command will fail as the branch doesn't exist on github at this time. The error message will show the correct code to enter. It will look like this:
     `git push --set-upstream origin [branchName]`
 * Checking out any other branches will update files to the versions committed in those branches. Just checkout branchName to get back to your latest version.
-5. Once the new branch has been completed. `add`, `committ` and `push` it.
+5. Once the new branch has been completed. `add`, `commit` and `push` it.
 * Each branch will need to be pushed separately.
 6. Checkout to master (or parent branch) then merge the other branch in.
 
