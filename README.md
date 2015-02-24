@@ -29,7 +29,7 @@ Another issue could be incomplete code due to interruptions. In this case:
 6. Checkout to master (or parent branch) then merge the other branch in.
 
 ##Getting all branches
-By default git clone will only clone the master branch. It does have info about the other branches however.
+By default git clone will only clone the current branch. It does have info about the other branches however. This is displayed the first time you pull the repo after branch is added.
 * Do `git branch -a` to see all branches (including remote)
 * Then `git checkout -b localName origin/remoteName`
 
@@ -40,3 +40,10 @@ We probably won't be doing this much. Leaving them will be safer; but for refere
 `git branch -d branchName`
 ### Deleting remote
 `git push origin --delete [branchName]`
+
+## patching files from another branch
+How to fetch files from another branch, use when not suitable for a merge.
+Use this when the files exist on current branch. Gives a diff to before you merge
+`git checkout --patch [branchName] [files]` (files space separated)
+This command is used when the file doesn't exist in current branch (Or to overwrite?)
+`git checkout [branchName] [files]`
